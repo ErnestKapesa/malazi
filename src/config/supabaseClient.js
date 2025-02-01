@@ -1,26 +1,16 @@
-// Add this temporarily at the top of the file
-console.log('Supabase URL:', import.meta.env.VITE_SUPABASE_URL)
-
 import { createClient } from '@supabase/supabase-js'
 
 // Get environment variables
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
-// More detailed validation
-if (!supabaseUrl) {
-  console.error('Supabase URL is missing. Current value:', supabaseUrl)
-  console.error('Environment variables:', import.meta.env)
-  throw new Error('Supabase URL is not configured. Check your .env file.')
-}
-
-if (!supabaseUrl.startsWith('https://')) {
-  console.error('Invalid Supabase URL format:', supabaseUrl)
-  throw new Error('Supabase URL must start with https://')
+// Validate URL and key
+if (!supabaseUrl || !supabaseUrl.startsWith('https://')) {
+  throw new Error('Invalid Supabase URL')
 }
 
 if (!supabaseAnonKey) {
-  throw new Error('Supabase Anon Key is not configured. Check your .env file.')
+  throw new Error('Missing Supabase Anon Key')
 }
 
 // Create client with validated credentials

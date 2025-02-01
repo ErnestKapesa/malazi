@@ -8,8 +8,8 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     server: {
-      port: parseInt(env.VITE_APP_PORT || 3000),
-      strictPort: true,
+      port: 3000, // Set the port to 3000
+      strictPort: true, // Ensure the port is strictly used
       host: true,
       open: true
     },
@@ -31,15 +31,15 @@ export default defineConfig(({ mode }) => {
       }
     },
     preview: {
-      port: 3000
+      port: 3000 // Set the preview port to 3000
     },
     define: {
-      'process.env.VITE_SUPABASE_URL': JSON.stringify(env.VITE_SUPABASE_URL),
-      'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(env.VITE_SUPABASE_ANON_KEY),
+      __SUPABASE_URL__: JSON.stringify(env.VITE_SUPABASE_URL),
+      __SUPABASE_ANON_KEY__: JSON.stringify(env.VITE_SUPABASE_ANON_KEY),
       'process.env.REACT_ROUTER_FUTURE': JSON.stringify({
         v7_startTransition: true,
         v7_relativeSplatPath: true
       })
     }
   }
-}) 
+})

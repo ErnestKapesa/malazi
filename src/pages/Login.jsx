@@ -33,7 +33,7 @@ export default function Login() {
   const { signIn } = useAuth()
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
-  const { register, handleSubmit, errors, isSubmitting } = useForm()
+  const { register, handleSubmit, formState: { errors } } = useForm()
   const toast = useToast()
 
   const bgColor = useColorModeValue('white', 'gray.800')
@@ -136,7 +136,7 @@ export default function Login() {
                 <FormLabel color="gray.700">Password 🔒</FormLabel>
                 <InputGroup>
                   <Input
-                    type="password"
+                    type={showPassword ? 'text' : 'password'}
                     placeholder="Enter your password"
                     {...register('password', {
                       required: 'Password is required',
@@ -206,4 +206,4 @@ export default function Login() {
       </MotionBox>
     </Box>
   )
-} 
+}
