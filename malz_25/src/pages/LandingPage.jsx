@@ -140,7 +140,7 @@ function LandingPage() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: "url('/images/malazi_bg.jpg')", // Updated path
+          backgroundImage: "url('https://nejkmctbvlkkgngjtdiz.supabase.co/storage/v1/object/public/malazi_images//malazi_bg.jpg')", // Updated path
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -237,7 +237,7 @@ function LandingPage() {
               display={{ base: 'none', md: 'block' }}
             >
               <Image
-                src="/images/medium-shot-young-friends-hostel_23-2150598862.jpg" // Updated path
+                src="https://nejkmctbvlkkgngjtdiz.supabase.co/storage/v1/object/public/malazi_images//medium-shot-young-friends-hostel_23-2150598862.jpg" // Updated path
                 alt="Student Housing"
                 rounded="2xl"
                 shadow="2xl"

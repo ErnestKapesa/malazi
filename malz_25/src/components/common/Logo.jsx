@@ -12,7 +12,7 @@ export function Logo({ showText = true, size = "md" }) {
   return (
     <HStack as={RouterLink} to="/" spacing={2}>
       <Image
-        src="images/malazi_logo.png"
+        src="https://nejkmctbvlkkgngjtdiz.supabase.co/storage/v1/object/public/malazi_images//malazi_logo.png"
         alt="Malazi Logo"
         h={sizes[size].image}
         w="auto"
