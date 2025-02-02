@@ -104,7 +104,7 @@ export default function Login() {
         w="90%"
       >
         <VStack spacing={8}>
-          <Image src="/malazi_logo.png" alt="Malazi Logo" h="60px" />
+          <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
           
           <Heading size="lg" textAlign="center" color="gray.700">
             Welcome Back! 🏠

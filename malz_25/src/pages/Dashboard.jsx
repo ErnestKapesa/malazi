@@ -8,6 +8,7 @@ import {
   TabPanel,
   Heading,
   Box,
+  Image
 } from '@chakra-ui/react'
 import { useAuth } from '../contexts/AuthContext'
 import StudentsList from '../components/dashboard/StudentsList'
@@ -20,6 +21,7 @@ function Dashboard() {
 
   return (
     <Container maxW="container.xl" py={8}>
+      <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
       <Heading mb={6}>👋 Welcome to Your Dashboard</Heading>
       
       <Tabs colorScheme="green" isLazy>
@@ -49,4 +51,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard 
+export default Dashboard

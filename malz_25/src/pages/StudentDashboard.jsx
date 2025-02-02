@@ -20,6 +20,7 @@ import {
   ModalCloseButton,
   Textarea,
   VStack,
+  Image,
 } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 import { supabase } from '../config/supabaseClient'
@@ -121,6 +122,7 @@ export default function StudentDashboard() {
     <Container maxW="container.xl" py={8}>
       <Stack spacing={8}>
         <Box textAlign="center">
+          <Image src="/assets/malazi_logo.png" alt="Malazi Logo" h="60px" />
           <Heading size="xl" mb={2}>
             Find Your Perfect Student Home 🏠
           </Heading>
@@ -204,4 +206,4 @@ export default function StudentDashboard() {
       </Modal>
     </Container>
   )
-} 
+}

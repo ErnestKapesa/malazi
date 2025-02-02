@@ -144,7 +144,7 @@ export default function Register() {
           my={{ base: 4, md: 8 }}
         >
           <VStack spacing={6}>
-            <Image src="/malazi_logo.png" alt="Malazi Logo" h="60px" />
+            <Image src="images/malazi_logo.png" alt="Malazi Logo" h="60px" />
             
             <Text fontSize="2xl" fontWeight="bold" color="gray.700">
               Join Malazi Today ✨
@@ -294,4 +294,4 @@ export default function Register() {
       </Box>
     </Container>
   )
-} 
+}

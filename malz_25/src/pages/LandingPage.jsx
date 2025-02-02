@@ -140,7 +140,7 @@ function LandingPage() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: "url('/malazi_bg.jpg')",
+          backgroundImage: "url('/images/malazi_bg.jpg')", // Updated path
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -237,7 +237,7 @@ function LandingPage() {
               display={{ base: 'none', md: 'block' }}
             >
               <Image
-                src="/medium-shot-young-friends-hostel_23-2150598862.jpg"
+                src="/images/medium-shot-young-friends-hostel_23-2150598862.jpg" // Updated path
                 alt="Student Housing"
                 rounded="2xl"
                 shadow="2xl"
@@ -250,6 +250,7 @@ function LandingPage() {
                   transform: "perspective(1000px) rotateY(0deg)",
                 }}
               />
+            
             </Box>
           </Stack>
         </Container>
@@ -331,4 +332,4 @@ function LandingPage() {
   )
 }
 
-export default LandingPage 
+export default LandingPage

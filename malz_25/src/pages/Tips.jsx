@@ -19,6 +19,7 @@ import {
   SimpleGrid,
   Select,
   Spinner,
+  Image,
 } from '@chakra-ui/react'
 import { AddIcon } from '@chakra-ui/icons'
 import { supabase } from '../config/supabaseClient'
@@ -174,6 +175,7 @@ export default function Tips() {
     <Container maxW="container.xl" py={8}>
       <VStack spacing={8}>
         <Box textAlign="center">
+          <Image src="/assets/malazi_logo.png" alt="Malazi Logo" h="60px" />
           <Heading size="xl" mb={2}>
             Student Tips & Experiences 💡
           </Heading>
@@ -265,4 +267,4 @@ export default function Tips() {
       </Modal>
     </Container>
   )
-} 
+}

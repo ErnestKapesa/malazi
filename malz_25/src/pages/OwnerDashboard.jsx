@@ -8,6 +8,7 @@ import {
   TabPanel,
   Heading,
   Badge,
+  Image
 } from '@chakra-ui/react'
 import { useAuth } from '../contexts/AuthContext'
 import StudentsList from '../components/dashboard/StudentsList'
@@ -38,6 +39,7 @@ function OwnerDashboard() {
 
   return (
     <Container maxW="container.xl" py={8}>
+      <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
       <Heading mb={6}>Welcome, {user.user_metadata.full_name}</Heading>
       
       <Tabs colorScheme="green" isLazy>
@@ -83,4 +85,4 @@ function OwnerDashboard() {
   )
 }
 
-export default OwnerDashboard 
+export default OwnerDashboard

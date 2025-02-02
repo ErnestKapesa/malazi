@@ -62,7 +62,7 @@ export default function Navbar() {
         <Flex alignItems="center" h="full">
           <Box as={RouterLink} to="/" mr={8}>
             <Image 
-              src="/malazi_logo.png" 
+              src="images/malazi_logo.png" 
               alt="Malazi" 
               height={{ base: "35px", md: "40px" }}
             />

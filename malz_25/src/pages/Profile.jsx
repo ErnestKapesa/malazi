@@ -9,6 +9,7 @@ import {
   Button,
   useToast,
   Heading,
+  Image
 } from '@chakra-ui/react'
 import { useAuth } from '../contexts/AuthContext'
 import { supabaseService } from '../services/supabaseService'
@@ -49,6 +50,7 @@ function Profile() {
     <Container maxW="container.sm" py={8}>
       <Box borderWidth="1px" borderRadius="lg" p={8}>
         <VStack spacing={6}>
+          <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
           <Heading size="lg">Profile Settings</Heading>
           
           <form onSubmit={handleSubmit} style={{ width: '100%' }}>
@@ -91,4 +93,4 @@ function Profile() {
   )
 }
 
-export default Profile 
+export default Profile

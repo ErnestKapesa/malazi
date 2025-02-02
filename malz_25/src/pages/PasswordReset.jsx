@@ -12,6 +12,7 @@ import {
   Heading,
   Alert,
   AlertIcon,
+  Image
 } from '@chakra-ui/react'
 import { supabase } from '../config/supabaseClient'
 
@@ -55,6 +56,7 @@ function PasswordReset() {
     <Container maxW="lg" py={12}>
       <Box bg="white" p={8} borderRadius="xl" boxShadow="lg">
         <VStack spacing={6}>
+          <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
           <Heading size="lg">Reset Password</Heading>
           
           {sent ? (
@@ -92,4 +94,4 @@ function PasswordReset() {
   )
 }
 
-export default PasswordReset 
+export default PasswordReset

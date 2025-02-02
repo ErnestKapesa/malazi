@@ -17,6 +17,7 @@ import {
   AlertTitle,
   AlertDescription,
   useToast,
+  Image
 } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 import { supabase } from '../config/supabaseClient'
@@ -75,6 +76,7 @@ export default function Home() {
   return (
     <Container maxW="container.xl" py={10}>
       <Box textAlign="center">
+        <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
         <Heading as="h1" size="2xl" mb={6}>
           Welcome to Malazi 🏠
         </Heading>
@@ -84,4 +86,4 @@ export default function Home() {
       </Box>
     </Container>
   )
-} 
+}

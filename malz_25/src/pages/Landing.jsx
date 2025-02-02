@@ -9,6 +9,7 @@ import {
   HStack,
   useColorModeValue,
   Link,
+  Image
 } from '@chakra-ui/react'
 import { Link as RouterLink, useNavigate } from 'react-router-dom'
 import { roleRedirectService } from '../services/roleRedirectService'
@@ -26,6 +27,7 @@ export function Landing() {
   return (
     <Container maxW="container.xl" py={20}>
       <VStack spacing={8} textAlign="center">
+        <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
         <Heading
           as={motion.h1}
           initial={{ opacity: 0, y: 20 }}
@@ -126,4 +128,4 @@ export function Landing() {
   )
 }
 
-export default Landing 
+export default Landing

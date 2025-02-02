@@ -9,6 +9,7 @@ import {
   Icon,
   HStack,
   VStack,
+  Image
 } from '@chakra-ui/react'
 import { FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa'
 
@@ -17,6 +18,7 @@ function Contact() {
     <Box pt={20} pb={20}>
       <Container maxW="container.xl">
         <Stack spacing={12} align="center">
+          <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
           <Stack spacing={6} textAlign="center" maxW="2xl">
             <Heading size="2xl">Get in Touch</Heading>
             <Text fontSize="xl" color="gray.600">
@@ -82,4 +84,4 @@ function Contact() {
   )
 }
 
-export default Contact 
+export default Contact

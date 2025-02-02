@@ -7,6 +7,7 @@ import {
   Icon,
   SimpleGrid,
   VStack,
+  Image
 } from '@chakra-ui/react'
 import { FaGraduationCap, FaHandshake, FaHome, FaHeart } from 'react-icons/fa'
 
@@ -27,6 +28,7 @@ function About() {
         <Stack spacing={12}>
           {/* Vision Section */}
           <Stack spacing={6} textAlign="center">
+            <Image src="/images/malazi_logo.png" alt="Malazi Logo" h="60px" />
             <Heading size="2xl">Our Vision</Heading>
             <Text fontSize="xl" color="gray.600" maxW="3xl" mx="auto">
               Malazi aims to revolutionize how students find and secure accommodation,
@@ -96,4 +98,4 @@ function About() {
   )
 }
 
-export default About 
+export default About
